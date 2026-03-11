@@ -1,3 +1,6 @@
+;;;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
+;;;; SPDX-License-Identifier: BSD-3-Clause
+
 ;;;; cl-l2 Package Definitions
 ;;;; Pure Common Lisp Layer 2 Rollup Primitives
 ;;;;

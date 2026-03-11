@@ -6,7 +6,7 @@
 (asdf:defsystem #:cl-l2
   :name "cl-l2"
   :version "0.1.0"
-  :author "CLPIC Contributors"
+  :author "Parkian Company LLC"
   :license "MIT"
   :description "Pure Common Lisp Layer 2 rollup primitives: state management, batch processing, commitments, and rollup logic"
   :homepage "https://github.com/clpic/cl-l2"

@@ -1,3 +1,6 @@
+;;;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
+;;;; SPDX-License-Identifier: BSD-3-Clause
+
 ;;;; cl-l2/src/rollup.lisp - Rollup Coordination
 ;;;; Pure Common Lisp rollup coordination logic
 ;;;;
