@@ -310,6 +310,11 @@
    (account-state-pubkey-hash account)
    (account-state-storage-root account)))
 
+(defun hash-account-state (account)
+  "Hash an account state to a single field element.
+   Used for Merkle proof leaf values."
+  (encode-account-to-leaf account))
+
 (defun state-db-commit (db)
   "Commit pending updates to the state tree.
    Returns the new state root."
