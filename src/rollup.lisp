@@ -190,7 +190,7 @@
 
     ;; Get transactions from mempool
     (loop while (and (< processed max-txs)
-                     (not (queue-empty-p (mempool-queue mempool))))
+                     (> (mempool-size mempool) 0))
           for tx = (mempool-get-best mempool)
           while tx
           do (multiple-value-bind (valid-p error)
