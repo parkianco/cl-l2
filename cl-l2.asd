@@ -35,4 +35,6 @@
     :components
     ((:file "test-l2"))))
   :perform (test-op (op c)
-             (uiop:symbol-call :cl-l2.test :run-tests)))
+             (let ((result (uiop:symbol-call :cl-l2.test :run-tests)))
+               (unless result
+                 (error "Tests failed")))))
