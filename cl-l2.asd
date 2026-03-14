@@ -1,3 +1,6 @@
+;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
+;; SPDX-License-Identifier: BSD-3-Clause
+
 ;;;; cl-l2.asd - Layer 2 Rollup Primitives for Common Lisp
 ;;;; Pure Common Lisp implementation of L2 scaling primitives
 ;;;;
@@ -26,7 +29,7 @@
      (:file "commitment")
      (:file "rollup"))))
 
-  :in-order-to ((test-op (test-op #:cl-l2/test))))
+  :in-order-to ((asdf:test-op (test-op #:cl-l2/test))))
 
 (asdf:defsystem #:cl-l2/test
   :depends-on (#:cl-l2)
@@ -34,7 +37,7 @@
   ((:module "test"
     :components
     ((:file "test-l2"))))
-  :perform (test-op (op c)
+  :perform (asdf:test-op (op c)
              (let ((result (uiop:symbol-call :cl-l2.test :run-tests)))
                (unless result
                  (error "Tests failed")))))
