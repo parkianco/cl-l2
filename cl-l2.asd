@@ -9,8 +9,8 @@
 (asdf:defsystem #:cl-l2
   :name "cl-l2"
   :version "0.1.0"
-  :author "Parkian Company LLC"
-  :license "MIT"
+  :author "Park Ian Co"
+  :license "Apache-2.0"
   :description "Pure Common Lisp Layer 2 rollup primitives: state management, batch processing, commitments, and rollup logic"
   :homepage "https://github.com/parkianco/cl-l2"
   :bug-tracker "https://github.com/parkianco/cl-l2/issues"
@@ -21,7 +21,7 @@
   ((:file "package")
    (:module "src"
     :serial t
-    :depends-on ("package")
+    :depends-on ("cl-l2")
     :components
     ((:file "util")
      (:file "state")
