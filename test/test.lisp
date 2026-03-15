@@ -2,13 +2,14 @@
 ;; SPDX-License-Identifier: Apache-2.0
 
 (defpackage #:cl-l2.test
-  (:use #:cl)
+  (:use #:cl #:cl-l2)
   (:export #:run-tests))
 
 (in-package #:cl-l2.test)
 
 (defun run-tests ()
-  (format t "Running tests for cl-l2...~%")
-  ;; We verify that the system loads correctly, which is 90% of the battle for these stubs.
-  (assert t)
+  (format t "Executing functional test suite for cl-l2...~%")
+  (assert (equal (deep-copy-list '(1 (2 3) 4)) '(1 (2 3) 4)))
+  (assert (equal (group-by-count '(1 2 3 4 5) 2) '((1 2) (3 4) (5))))
+  (format t "All functional tests passed!~%")
   t)

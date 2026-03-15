@@ -54,6 +54,8 @@
   ;; State Management Exports
   ;; ============================================================================
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -117,6 +119,8 @@
   ;; Sparse Merkle Tree Exports
   ;; ============================================================================
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -157,6 +161,8 @@
   ;; Batch Processing Exports
   ;; ============================================================================
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -261,6 +267,8 @@
   ;; Commitment Exports
   ;; ============================================================================
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -306,6 +314,8 @@
   ;; Rollup Coordination Exports
   ;; ============================================================================
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -361,6 +371,8 @@
   ;; Utility Exports
   ;; ============================================================================
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -399,6 +411,8 @@
 (defpackage #:cl-l2.test
   (:use #:cl #:cl-l2)
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
