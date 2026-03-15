@@ -54,7 +54,9 @@
   ;; State Management Exports
   ;; ============================================================================
   (:export
-   ;; State Database
+   #:with-l2-timing
+   #:l2-batch-process
+   #:l2-health-check;; State Database
    #:state-db
    #:make-state-db
    #:state-db-p
@@ -111,7 +113,9 @@
   ;; Sparse Merkle Tree Exports
   ;; ============================================================================
   (:export
-   ;; Tree Structure
+   #:with-l2-timing
+   #:l2-batch-process
+   #:l2-health-check;; Tree Structure
    #:sparse-merkle-tree
    #:make-sparse-merkle-tree
    #:sparse-merkle-tree-p
@@ -145,7 +149,9 @@
   ;; Batch Processing Exports
   ;; ============================================================================
   (:export
-   ;; L2 Transaction
+   #:with-l2-timing
+   #:l2-batch-process
+   #:l2-health-check;; L2 Transaction
    #:l2-tx
    #:make-l2-tx
    #:l2-tx-p
@@ -243,7 +249,9 @@
   ;; Commitment Exports
   ;; ============================================================================
   (:export
-   ;; Commitment Structure
+   #:with-l2-timing
+   #:l2-batch-process
+   #:l2-health-check;; Commitment Structure
    #:state-commitment
    #:make-state-commitment
    #:state-commitment-p
@@ -282,7 +290,9 @@
   ;; Rollup Coordination Exports
   ;; ============================================================================
   (:export
-   ;; Rollup State
+   #:with-l2-timing
+   #:l2-batch-process
+   #:l2-health-check;; Rollup State
    #:rollup-state
    #:make-rollup-state
    #:rollup-state-p
@@ -331,7 +341,9 @@
   ;; Utility Exports
   ;; ============================================================================
   (:export
-   ;; Hashing
+   #:with-l2-timing
+   #:l2-batch-process
+   #:l2-health-check;; Hashing
    #:poseidon-hash
    #:poseidon-hash-2
    #:poseidon-hash-4
@@ -362,4 +374,7 @@
 
 (defpackage #:cl-l2.test
   (:use #:cl #:cl-l2)
-  (:export #:run-tests))
+  (:export
+   #:with-l2-timing
+   #:l2-batch-process
+   #:l2-health-check#:run-tests))

@@ -20,14 +20,10 @@
   :components
   ((:file "package")
    (:module "src"
-    :serial t
-    :depends-on ("cl-l2")
-    :components
-    ((:file "util")
-     (:file "state")
-     (:file "batch")
-     (:file "commitment")
-     (:file "rollup"))))
+                :components ((:file "package")
+                             (:file "conditions" :depends-on ("package"))
+                             (:file "types" :depends-on ("package"))
+                             (:file "cl-l2" :depends-on ("package" "conditions" "types"))))))
 
   :in-order-to ((asdf:test-op (test-op #:cl-l2/test))))
 
