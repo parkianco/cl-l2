@@ -54,7 +54,11 @@
   ;; State Management Exports
   ;; ============================================================================
   (:export
-   #:with-l2-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-l2-timing
    #:l2-batch-process
    #:l2-health-check;; State Database
    #:state-db
@@ -113,7 +117,11 @@
   ;; Sparse Merkle Tree Exports
   ;; ============================================================================
   (:export
-   #:with-l2-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-l2-timing
    #:l2-batch-process
    #:l2-health-check;; Tree Structure
    #:sparse-merkle-tree
@@ -149,7 +157,11 @@
   ;; Batch Processing Exports
   ;; ============================================================================
   (:export
-   #:with-l2-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-l2-timing
    #:l2-batch-process
    #:l2-health-check;; L2 Transaction
    #:l2-tx
@@ -249,7 +261,11 @@
   ;; Commitment Exports
   ;; ============================================================================
   (:export
-   #:with-l2-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-l2-timing
    #:l2-batch-process
    #:l2-health-check;; Commitment Structure
    #:state-commitment
@@ -290,7 +306,11 @@
   ;; Rollup Coordination Exports
   ;; ============================================================================
   (:export
-   #:with-l2-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-l2-timing
    #:l2-batch-process
    #:l2-health-check;; Rollup State
    #:rollup-state
@@ -341,7 +361,11 @@
   ;; Utility Exports
   ;; ============================================================================
   (:export
-   #:with-l2-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-l2-timing
    #:l2-batch-process
    #:l2-health-check;; Hashing
    #:poseidon-hash
@@ -375,6 +399,10 @@
 (defpackage #:cl-l2.test
   (:use #:cl #:cl-l2)
   (:export
-   #:with-l2-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-l2-timing
    #:l2-batch-process
    #:l2-health-check#:run-tests))
